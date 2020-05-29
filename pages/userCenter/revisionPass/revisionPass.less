@@ -1,0 +1,62 @@
+.revisionPassbox {
+  .grid-content {
+    margin-top: 30px;
+    .el-button {
+      margin-left: 150px;
+      padding: 11px 20px;
+      background: #f3262d;
+      border: none;
+      border-radius: 2px;
+      color: #fff;
+      &:hover {
+        background: #f43c42;
+      }
+      &:focus{
+        background: #f3262d;
+        background-color: #f3262d;
+      }
+    }
+  }
+
+  .revisionPass_cont {
+    .el-col-8 {
+      width: 31.33333%;
+    }
+  }
+
+  .el-form-item__error {
+    height: 18px;
+    top: 19%;
+    left: 33% !important;
+    width: 300px;
+    height: 18px;
+    padding-left: 20px;
+    // padding-top: 2px;
+    background: url('../../../assets/img/error.png') no-repeat;
+
+  }
+}
+.revisionPass_cont{
+  &>.el-form{
+      &>.el-form-item,
+      &>.is-success{
+          &>.el-form-item__content{
+            &>div{
+              &>.el-input{
+                  &>.el-input__inner:focus{
+                      border: 1px solid #5da6ff;
+                      outline: 0;
+                      box-shadow: 0px 0px 4px #5da6ff;
+                  }
+                  &>.el-input__inner{
+                      border-color:#DCDFE6;
+
+                      border-radius: 0;
+                  }
+              }
+            }
+              
+          }
+      }
+  }
+}

@@ -1,0 +1,219 @@
+.tollMarket {
+    background: #f4f6f8;
+    .toll_market {
+      width: 1210px;
+      min-height: 1048px;
+      margin: 20px auto 0;
+      margin-bottom: 50px;
+        background: #fff;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      .banner {
+        width: 1210px;
+        height: 220px;
+  
+        &>img {
+          width: 1210px;
+          height: 220px;
+        }
+      }
+  
+      .dynamicState {
+        width: 1090px;
+        height: 38px;
+        background: #f4f6f8;
+        display: flex;
+        margin: 20px 0 30px;
+        line-height: 38px;
+        padding-left: 12px;
+        font-size: 14px;
+        color: #333;
+        &>p{
+          color: #999;
+        }
+        .dealScroll {
+          height: 38px;
+          overflow: hidden;
+          vertical-align: -4px;
+          display: flex;
+          flex-direction: column;
+  
+          ul {
+            li {
+              max-width: 489px;
+              height: 38px;
+              display: flex;
+              align-items: center;
+              p {
+                margin-right: 7px;
+              }
+        
+              &>p:nth-child(1) {
+                color: #999;
+              }
+        
+              &>p:nth-child(1) {
+                color: #333;
+              }
+        
+              &>p:nth-child(2) {
+                color: #555555;
+                margin-right: 0;
+              }
+        
+              &>p:nth-child(3) {
+                color: #f3262d;
+              }           
+            }
+          }
+  
+          .animateadMoney {
+            transition: all 1s;
+            margin-top: -38px;
+  
+            li {
+              max-width: 489px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              // margin-bottom: 5px;
+            }
+          }
+        }
+  
+        
+      }
+  
+      .market_list {
+        display: flex;
+        width: 1090px;
+        &>a {
+          width: 260px;
+          height: 330px;
+          cursor: pointer;
+          border: 1px solid #ddd;
+          margin-right: 17px;
+          padding: 0 8px;
+          position: relative;
+          transition: 1s;
+          /*过渡时间*/
+          -webkit-transition: 1s;
+          &>div:nth-child(1) {
+            width: 240px;
+            height: 240px;
+  
+            margin:8px 1px;
+  
+            &>img {
+              width: 240px;
+              height: 240px;
+            }
+          }
+  
+          &>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+  
+            &>span:nth-child(1) {
+              color: #333;
+              font-size: 14px;
+            }
+  
+            &>span:nth-child(2) {
+              display: flex;
+              font-size: 12px;
+              color: #ff0027;
+              line-height: 24px;
+              height: 24px;
+              overflow: hidden;
+  
+              p {
+                font-size: 18px;
+                line-height: 22px;
+                margin: 0 2px;
+              }
+            }
+          }
+  
+          &>div:nth-child(3) {
+            display: flex;
+            justify-content: space-between;
+  
+            &>div {
+              display: flex;
+              align-items: center;
+              font-size: 12px;
+              color: #999;
+              height: 21px;
+            }
+            .icon_dn{
+              width: 20px;
+              height: 18px;
+              margin: 0 5px 0 3px;
+              opacity: 0.6;
+            }
+            .icon_sj{
+              width: 20px;
+              height: 21px;
+              opacity: 0.6;
+            }
+  
+            &>div:last-child {
+              p {
+                color: #FBA642;
+                margin-left: 3px;
+              }
+            }
+          }
+          &>img{
+             display: block;
+             width: 104px;
+             height: 106px;
+             position: absolute; 
+             right: -12px;
+             top: -12px;
+          }
+        }
+        &>a::before {
+            /*之后添加，此处为边框*/
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            // width: 230px;
+            // height: 264px;
+            transform: scaleY(2.5);
+            /*Y轴放大2.5倍*/
+            // border: 1px solid rgba(243, 38, 45, 1);
+            opacity: 0;
+            /*透明度*/
+            transition: 0.7s;
+        }
+
+        &>a:hover::before {
+            /*悬停时，边框显示*/
+            transform: scaleY(1.5);
+            /*放大到1.5倍*/
+            opacity: 1;
+        }
+        &>a:last-child {
+          margin-right: 0;
+        }
+  
+        &>a:hover {
+          border: 1px solid #f3262d;
+  
+          &>div:nth-child(2) {
+            &>span:nth-child(1) {
+              color: #f3262d;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  

@@ -1,0 +1,118 @@
+.myDeposit_bot {
+  padding: 0 33px;
+  min-height: 468px;
+  background: #fff;
+  padding-top: 40px;
+
+
+  // overflow: auto;
+  position: relative;
+
+  .el-input__inner:focus,
+  .el-range-editor.is-active {
+    border: 1px solid #5da6ff;
+    outline: 0;
+    box-shadow: 0px 0px 4px #5da6ff;
+  }
+  .imgs {
+    position: absolute;
+    right: 6px;
+    z-index: 1;
+    width: 8px;
+    height: 36px;
+  }
+.regionAll{
+  &>.el-input{
+    &>.el-input__inner{
+      padding-right: 15px;
+      border-radius: 0;
+    }
+    &>.el-input__suffix{
+      display: none;
+    }
+  }
+}
+  .el-input__icon {
+    line-height: 30px;
+  }
+
+  .el-input__inner {
+    height: 36px;
+  }
+
+  .el-from {
+    margin-top: 45px;
+  }
+
+  .el-form-item__content {
+    line-height: 30px;
+
+    .el-date-editor--daterange.el-input__inner {
+      width: 273px;
+      overflow: hidden;
+      border-radius: 0;
+    }
+
+    .el-range-input {
+      width: 35%;
+    }
+
+    .el-range__icon {
+      line-height: 30px;
+    }
+
+    .el-range-separator {
+      line-height: 28px;
+      width: 8%;
+    }
+
+    .el-range-input {
+      // margin-left: 5px;
+    }
+  }
+
+  .el-form-item {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .user_bot {
+    .el-form-item__content {
+      width: 183px;
+      height: 34px;
+    }
+  }
+
+  .region_bot {
+    margin-right: 30px;
+
+    .el-form-item__content {
+      width: 120px;
+      height: 36px;
+
+      .el-input__inner {
+        // background: #f7f7f7;
+      }
+    }
+  }
+
+  .submit {
+    .el-button {
+      background: #f3262d;
+      border: 0;
+      height: 36px;
+      line-height: 6px;
+    }
+  }
+  .clear {
+    clear: both;
+  }
+}
+.dormitoryData{
+  &>#block{
+    margin: 30px 0px!important;
+    // .el-input__inner {
+    //   height: 28px;
+    // }
+  }
+}

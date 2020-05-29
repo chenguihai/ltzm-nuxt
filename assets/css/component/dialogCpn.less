@@ -1,0 +1,92 @@
+@import "../mixin";
+
+.tips_cpn {
+  padding: 0 0 50px;
+  box-shadow: 0px 6px 19px 1px rgba(51, 50, 50, 0.11);
+
+  .el-dialog__header {
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: @c_333;
+    font-size: @f_16;
+    background: @c_bg;
+  }
+
+  .el-dialog__body {
+    padding: 28px 40px 42px;
+  }
+
+  .content {
+    color: @c_666;
+
+    .title {
+      color: @c_333;
+      line-height: 30px;
+    }
+
+    .ctn {
+      color: @c_666;
+      line-height: 30px;
+    }
+
+    .hint {
+      color: @c_danger;
+      line-height: 30px;
+    }
+  }
+
+  .sub-title {
+    color: @c_333;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+
+    span {
+      width: 21px;
+      height: 21px;
+      line-height: 21px;
+      margin-right: 10px;
+      text-align: center;
+      color: @c_fff;
+      background: rgba(255, 163, 2, 1);
+      border-radius: 50%;
+    }
+
+    em {
+      color: @c_666;
+    }
+  }
+
+  .el-dialog__footer {
+    text-align: center;
+    padding: 0;
+
+    .default {
+      color: @c_666;
+      background: @c_f4f4f4;
+    }
+
+    .default:active, .default:hover {
+      border-color: @c_ccc;
+      background: @c_fff;
+    }
+
+    .danger {
+      color: @c_fff;
+      background: @c_danger;
+    }
+
+    .danger:active, danger:hover {
+      border-color: @c_hover;
+      background: @c_hover;
+    }
+  }
+}
+

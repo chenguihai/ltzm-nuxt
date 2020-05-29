@@ -1,0 +1,42 @@
+.multiple_upload {
+  @w_260: 260px;
+  @h_156: 156px;
+  @rate50: 50%;
+
+  .el-upload-list--picture-card .el-upload-list__item {
+    width: @w_260;
+    height: @h_156;
+  }
+
+  .el-upload--picture-card {
+    position: relative;
+    width: @w_260;
+    height: @h_156;
+    border-radius: 0;
+    background-color: #f4f6f8;
+    border-color:#f4f6f8 ;
+    &:hover{
+      background-color: #ccc;
+      border-color:#ccc;
+    }
+  }
+
+  .el-upload--picture-card i {
+    position: absolute;
+    left: @rate50;
+    top: @rate50;
+    transform: translate(-@rate50, -@rate50);
+    background-color: #DB0B07;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+  }
+  .el-icon-plus:before{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,236 @@
+.bank_box {
+
+  .myBank,
+  .myBankE {
+    // height: 619px;
+    background: #fff;
+
+    .myBank_top {
+      display: block;
+      height: 65px;
+      text-align: left;
+      margin: 0 20px;
+      margin-bottom: 28px;
+      line-height: 65px;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .myBank_cont {
+      // height: 339px;
+      border-bottom: 1px solid #eee;
+      margin: 0 20px;
+
+      .myBank_none {
+        .imgs {
+          img {
+            width: 187px;
+            height: 177px;
+            display: block;
+            margin: 0 auto;
+          }
+
+          .text {
+            font-size: 16px;
+            color: #999;
+          }
+        }
+
+        .ban_but {
+          width: 352px;
+          height: 51px;
+          border: 1px dashed #ccc;
+          border-radius: 12px;
+          color: #0066cc;
+          font-size: 16px;
+          margin: 20px 0 60px;
+
+          .icon {
+            height: 26px;
+            width: 26px;
+            vertical-align: -8px;
+            overflow: hidden;
+            margin-right: 10px;
+            font-size: 40px;
+
+            .ccccc {}
+          }
+        }
+      }
+
+      .myBank_q {
+        .myBank_none_box {
+          width: 100%;
+          min-height: 320px;
+          margin-bottom: 20px;
+          word-wrap: break-word;
+          overflow: auto;
+
+          .myBank_true {
+            width: 261px;
+            height: 146px;
+            background: url("../../../assets/img/bankb.png") no-repeat;
+            float: left;
+            margin-right: 37px;
+            margin-bottom: 24px;
+
+            .myBank_d {
+              height: 20px;
+              margin-top: 15px;
+
+              // padding-right: 18px;
+              span {
+                font-size: 12px;
+                color: #fff;
+                cursor: pointer;
+              }
+
+              &>span:hover {
+                color: #f3262d;
+              }
+
+              &>span:first-child {
+                float: right;
+              }
+
+              &>span:last-child {
+                float: right;
+                margin-right: 20px;
+              }
+            }
+
+            .myBank_name {
+              margin-left: 20px;
+              margin-top: 25px;
+              text-align: left;
+              color: #fff;
+              font-size: 12px;
+            }
+
+            .myBank_num {
+              font-size: 18px;
+              color: #fff;
+              text-align: left;
+              margin-left: 20px;
+              margin-top: 8px;
+            }
+
+            .myBank_user {
+              font-size: 14px;
+              color: #fff;
+              text-align: left;
+              margin-left: 20px;
+              margin-top: 8px;
+            }
+          }
+
+        }
+
+        .ban_but {
+          width: 261px;
+          height: 146px;
+          margin-bottom: 50px;
+          margin-top: 0;
+          float: left;
+          border: 2px solid #eee;
+
+          i {
+            width: 26px;
+            height: 26px;
+            display: block;
+            background: #0066cc;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .noborder{
+      border-bottom: 0;
+    }
+    .myBank_add {
+      padding: 0 55px;
+      height: 615px;
+    }
+  }
+
+  .myBankE {
+    .myBank_top {
+      border-bottom: 0;
+    }
+    .myBankG{
+      border-bottom: 1px solid #eee;
+    }
+  }
+}
+
+.realName {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .reminder {
+    width: 462px;
+    height: 232px;
+    background: #fff;
+    border-radius: 10px;
+
+    .header_t {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+      position: relative;
+      padding: 17px 0 16px;
+      border-bottom: 1px solid #eee;
+      &>span{
+        color:#333;
+      }
+      .icon-guanbi {
+        position: absolute;
+        font-size: 14px;
+        right: 10px;
+        top: 17px;
+        cursor: pointer;
+      }
+      .icon-guanbi:hover{
+        color: #f3262d;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+
+      span:nth-child(1) {
+        margin: 48px 0 49px;
+        color: #666;
+      }
+
+      span:nth-child(2) {
+        color: #fff;
+        cursor: pointer;
+        background: #f3262d;
+        width: 90px;
+        height: 38px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 38px;
+        .icon-xiangyoudianji-xuanzhong{
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

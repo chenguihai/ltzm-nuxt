@@ -1,0 +1,140 @@
+.payment_buy {
+  background: #f4f6f8;
+
+  .payment_data {
+    width: 1198px;
+    padding: 0 58px;
+    border: 1px solid #DFDFDF;
+    margin: 20px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+
+    .payment_top {
+      margin-bottom: 24px;
+
+      & > .payment_total {
+        padding: 33px 0;
+        font-size: 16px;
+        color: #666;
+        display: flex;
+        justify-content: space-between;
+
+        .num_total {
+          color: #FF0027;
+          font-weight: bold;
+        }
+      }
+
+      & > table {
+        width: 1082px;
+
+
+        border: 1px solid #DFDFDF;
+
+        & > thead {
+          background: #F4F6F8;
+
+          & > tr {
+            & > th {
+              height: 38px;
+              border-right: 1px solid #DFDFDF;
+              font-size: 14px;
+              color: #666;
+            }
+          }
+
+          & > th:last-child {
+            border-right: 0;
+          }
+        }
+
+        & > tbody {
+          & > tr {
+            & > td {
+              height: 46px;
+              border: 1px solid #DFDFDF;
+              border-bottom: 0;
+              font-size: 14px;
+              color: #666;
+              text-align: center;
+            }
+
+            & > td:nth-child(2) {
+              color: #ff0027;
+            }
+          }
+        }
+      }
+    }
+
+    .payment_bot {
+      & > span {
+        font-size: 16px;
+        color: #333;
+        padding: 15px 0;
+        display: block;
+      }
+
+      .payment {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 66px;
+
+        & > .el-radio {
+
+          display: flex;
+          align-items: center;
+          color: #333;
+          height: 76px;
+          width: 1084px;
+          padding: 0 0 0 10px;
+          margin-right: 0;
+
+          .el-radio__label {
+
+            .pay {
+              margin: 0 18px 0 8px;
+            }
+
+            .pay_color {
+              color: #ff0027;
+            }
+
+            .imgL {
+              margin-right: 8px;
+            }
+          }
+        }
+
+        .pay_bank {
+          span {
+            display: flex;
+            align-items: center;
+            margin-right: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .subm {
+    width: 120px;
+    height: 44px;
+    background: #f3262d;
+    color: #fff;
+    margin: 0 auto 107px;
+    border: none;
+
+    &:hover {
+      background-color: #F43C42;
+    }
+  }
+
+  .el-button:active {
+    border: 0;
+
+  }
+
+}

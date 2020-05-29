@@ -1,0 +1,686 @@
+.caseOrder {
+ 
+  
+    .mayOrder {
+      &> #block{
+        margin: 10px 0 30px 0 !important;
+      }
+    }
+   
+    // #block{
+    // //   position: absolute;
+    // //   bottom: 0;
+    // //   right: 20px;
+    //   .el-input__inner {
+    //     height: 28px;
+    //   }
+    // }
+    .myDeposit_bot {
+      // overflow: auto;
+      position: relative;
+      .el-range-editor.is-active {
+        // border: 1px solid #5da6ff;
+        outline: none;
+        box-shadow: none;
+        // box-shadow: 0px 0px 4px #5da6ff;
+
+      }
+     
+      .el-input__inner {
+        height: 36px;
+        border-radius: 0;
+      }
+  
+      .el-from {
+        margin-top: 45px;
+      }
+  
+      .el-form-item__content {
+        line-height: 30px;
+  
+        .el-date-editor--daterange.el-input__inner {
+          width: 286px;
+          overflow: hidden;
+          border-radius: 0;
+        }
+  
+        .el-range-input {
+          width: 37%;
+        }
+  
+        .el-range__icon {
+          line-height: 30px;
+        }
+  
+        .el-range-separator {
+          line-height: 28px;
+          width: 8%;
+        }
+  
+        .el-range-input {
+          // margin-left: 5px;
+        }
+      }
+  
+      .el-form-item {
+        float: left;
+        margin-right: 30px;
+      }
+  
+      .user_bot {
+        .el-form-item__content {
+          width: 197px;
+          height: 34px;
+        }
+      }
+  
+      .region_bot {
+        margin-right: 30px;
+  
+        &>.el-form-item__content {
+          width: 120px;
+          height: 36px;
+          &>.el-select {
+            &>.el-input {
+            
+              &>.el-input__suffix{
+                overflow: hidden;
+                &>.el-input__suffix-inner{
+                  &>.el-input__icon{
+                    height: 107%;
+                  }
+                }
+              }
+            }
+          }
+          .el-input__inner:focus {
+            outline:none;
+          }
+        }
+      }
+  
+      .submit {
+        .el-button {
+          background: #f3262d;
+          border: 0;
+          height: 36px;
+          line-height: 6px;
+        }
+      }
+  
+     
+    }
+  
+    // .t_money {
+    //   .el-dialog {
+    //     width: 26%;
+    //     height: 352px;
+  
+    //     .el-dialog__body {
+    //       text-align: left;
+    //       position: relative;
+    //       padding: 30px 20px !important;
+  
+    //       &>div:first-child {
+    //         font-size: 14px;
+    //         color: #333;
+    //         margin-bottom: 20px;
+  
+    //         span {
+    //           display: inline-block;
+    //           margin-right: 20px;
+    //         }
+  
+    //         .pay_wx {
+    //           display: block;
+    //           text-align: center;
+    //           font-size: 14px;
+    //           color: #666;
+    //         }
+  
+    //         li {
+    //           display: inline-block;
+    //           color: #ff0027;
+    //         }
+    //       }
+  
+    //       .img_pay {
+    //         position: relative;
+    //         height: 150px;
+  
+    //         .wx_img {
+    //           display: block;
+    //           width: 150px;
+    //           height: 150px;
+    //           background: #ccc;
+    //           position: absolute;
+    //           left: 50%;
+    //           top: 15px;
+    //           margin-left: -75px;
+    //         }
+    //       }
+  
+    //       &>div:nth-child(2) {
+    //         overflow: hidden;
+    //         padding-bottom: 60px;
+  
+    //         .span_pay {
+    //           float: left;
+    //           margin-right: 20px;
+    //         }
+  
+    //         .payment {
+    //           float: left;
+    //           width: 200px;
+  
+    //           .el-radio {
+    //             margin-bottom: 15px;
+  
+    //             .pay {
+    //               margin-right: 30px;
+    //             }
+  
+    //             .pay_color {
+    //               color: #ff0027;
+    //             }
+  
+    //             .el-radio__input.is-checked+.el-radio__label {
+    //               color: #333;
+    //             }
+    //           }
+  
+    //           .pay_bank {
+    //             .el-radio__label {
+    //               .pay_list {
+    //                 margin-left: 20px;
+    //                 color: #0066cc;
+    //                 font-size: 12px;
+    //                 padding: 0;
+    //                 position: relative;
+    //                 bottom: 0;
+    //                 left: 30px;
+    //                 background: #fff;
+    //                 margin: 0;
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+  
+    //       .el-button {
+    //         padding: 10px 25px;
+    //         position: absolute;
+    //         bottom: 30px;
+    //         left: 50%;
+    //         margin-left: -40px;
+    //         background: #f3262d;
+    //         color: #fff;
+    //         border: 0;
+    //       }
+    //     }
+    //   }
+    // }
+  
+    // .bank_money {
+    //   .el-dialog {
+    //     width: 440px;
+    //     height: 284px;
+    //   }
+  
+    //   .pay_b {
+    //     position: relative;
+    //     padding-top: 10px;
+  
+    //     .pay_wx {
+    //       display: block;
+    //       text-align: left;
+    //       position: absolute;
+    //       left: 50%;
+    //       width: 270px;
+    //       margin-left: -135px;
+    //       color: #666;
+  
+    //       p {
+    //         // position: absolute;
+    //         display: inline;
+    //         right: 0;
+    //         top: 0;
+    //         color: #ff0027;
+    //       }
+    //     }
+    //   }
+  
+    //   .img_pay {
+    //     margin-top: 10%;
+    //     display: block;
+    //     width: 270px;
+    //     margin-left: 16%;
+    //     text-align: left;
+    //     padding: 20px 0 30px;
+  
+    //     p {
+    //       display: inline;
+    //       color: #333;
+    //       font-weight: 600;
+    //     }
+    //   }
+  
+    //   .el-button {
+    //     padding: 10px 25px;
+    //     position: absolute;
+    //     bottom: 40px;
+    //     left: 50%;
+    //     margin-left: -40px;
+    //     background: #f3262d;
+    //     color: #fff;
+    //     border: 0;
+    //     transition: 0 !important;
+    //   }
+    // }
+  
+    // .banList {
+    //   .el-dialog {
+    //     width: 750px;
+    //     height: 430px;
+    //   }
+  
+    //   .el-dialog__header {
+    //     text-align: left;
+    //     background: #f5f5f5;
+    //     padding: 15px;
+    //     font-weight: 600;
+  
+    //     .el-dialog__title {
+    //       font-size: 16px;
+    //       color: #333;
+    //     }
+    //   }
+  
+    //   .ban_b {
+    //     margin-bottom: 60px;
+  
+    //     img {
+    //       display: inline-block;
+    //       width: 166px;
+    //       height: 43px;
+    //       background: #ccc;
+    //       margin-right: 50px;
+    //       margin-bottom: 4px;
+    //     }
+  
+    //     .ban_list {
+    //       display: inline-block;
+    //       color: #333;
+    //       text-align: left;
+  
+    //       li {
+    //         line-height: 21px;
+    //       }
+  
+    //       &>li:nth-child(2),
+    //       &>li:nth-child(3) {
+    //         padding-left: 14px;
+    //       }
+    //     }
+    //   }
+    // }
+  
+    // .InvoiceApplication_box {
+    //   .el-form-item__label {
+    //     padding: 0 20px 0 0 !important;
+    //     color: #666 !important;
+    //     width: 117px;
+    //   }
+  
+    //   .el-dialog {
+    //     width: 560px;
+  
+    //     .el-dialog__header {
+    //       text-align: left;
+  
+    //       span {
+    //         font-size: 16px;
+    //         color: #333;
+    //       }
+    //     }
+  
+    //     .el-dialog__body {
+    //       padding: 30px 40px !important;
+  
+    //       .el-form-item__error {
+    //         top: 90%;
+    //         left: 117px;
+    //       }
+  
+    //       .el-input {
+    //         width: 331px;
+    //         height: 36px;
+    //         line-height: 36px;
+  
+    //         .el-input__inner {
+    //           height: 36px;
+    //           line-height: 36px;
+  
+    //           .el-input__icon {
+    //             line-height: 36px !important;
+    //           }
+    //         }
+  
+    //         .el-input__inner:focus {
+    //           border: 1px solid #5da6ff;
+    //           outline: 0;
+    //           box-shadow: 0px 0px 4px #5da6ff;
+    //         }
+    //       }
+  
+    //       .el-form {
+    //         .el-form-item {
+    //           // margin-bottom: 16px;
+  
+    //           .el-form-item__content {
+    //             text-align: left;
+    //           }
+    //         }
+  
+    //         &>.el-form-item:nth-child(2) {
+    //           .el-select {
+    //             color: #333;
+    //             font-size: 14px;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  
+    // .invoiceaddress {
+      
+  
+    //   .el-dialog {
+    //     width: 560px;
+    //     height: 458px;
+  
+    //     .el-dialog__body {
+    //       padding: 30px 78px !important;
+  
+    //       .el-form {
+    //         .el-form-item__label {
+    //           width: 78px;
+    //         }
+    //         .el-form-item:nth-child(2){
+    //           .el-form-item__content{
+    //             .el-input{
+    //               .el-input__inner{
+    //                 float: right;
+    //                 margin-right: -4px;
+    //               }
+    //             }
+    //           }
+    //         }
+    //         .el-form-item {
+    //           // margin-bottom: 16px;
+  
+    //           .el-input {
+    //             width: 100%;
+    //             float: left;
+    //           }
+  
+    //           .el-input__inner {
+    //             width: 330px;
+    //             height: 36px;
+                
+    //           }
+             
+    //         }
+    //         .el-form-item__content {
+    //           display: flex;
+    //           flex-wrap: wrap;}
+    //         &>.el-form-item:first-child {
+    //           .el-form-item__content {
+    //             display: flex;
+    //             flex-wrap: wrap;
+    //             .el-select {
+    //               width: 106px;
+    //               height: 36px;
+    //               float: left;
+    //               margin-right: 6px;
+    //               margin-bottom: 10px;
+  
+    //               .el-input__inner {
+    //                 width: 106px;
+    //                 height: 36px;
+    //               }
+  
+    //               .el-input__suffix {
+    //                 right: -29px;
+    //               }
+    //             }
+  
+    //             .addressX {
+    //               width: 116%;
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+  
+    //     .el-dialog__footer {
+    //       .invoicsub {
+    //         margin-bottom: 40px;
+  
+    //         .el-button {
+    //           padding: 12px 56px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  
+    // .InvoiceApplication_box,
+    // .invoiceaddress {
+    //   .el-dialog__footer {
+    //     text-align: center;
+  
+    //     .el-button {
+    //       padding: 12px 48px;
+    //     }
+  
+    //     .el-button--primary {
+    //       color: #fff;
+    //       background: #f3262d;
+    //       border: 0;
+    //     }
+    //   }
+    // }
+  
+    .checkI {
+      .el-button {
+        transition: 0s !important;
+        padding: 0;
+      }
+    }
+    &>.canOrder {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
+  
+      &>.canOrder_con {
+        width: 426px;
+        height: 281px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -140px 0 0 -213px;
+        display: flex;
+        flex-direction: column;
+  
+        &>.canOrderheader {
+          background: #F5F5F5;
+          height: 45px;
+          text-align: center;
+          line-height: 45px;
+          position: relative;
+  
+          &>span {
+            font-size: 16px;
+            color: #333;
+          }
+  
+          &>.iconfont {
+            position: absolute;
+            right: 15px;
+            font-size: 12px;
+            cursor: pointer;
+          }
+  
+          &>.iconfont:hover {
+            color: #f3262d;
+          }
+        }
+  
+        &>.canOrderCom {
+          flex: 1;
+  
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
+          &>.el-form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+  
+            &>.type_bot {
+              margin-top: 30px;
+              &>.el-form-item__label {
+                font-size: 14px;
+                color: #666;
+                padding: 0 8px 0 0;
+              }
+  
+              &>.el-form-item__content {
+                &>.el-select {
+                  &>.el-input {
+                    &>.el-input__inner {
+                      width: 260px;
+                      height: 36px;
+                      border: 1px solid rgba(221, 221, 221, 1);
+                      border-radius: 4px;
+                    }
+                    ::-webkit-input-placeholder {
+                      color: #999;
+                      font-size: 14px;
+                    }
+    
+                    :-moz-placeholder {
+                      color: #999;
+                      font-size: 14px;
+                    }
+    
+                    ::-moz-placeholder {
+                      color: #999;
+                      font-size: 14px;
+                    }
+    
+                    :-ms-input-placeholder {
+                      color: #999;
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+  
+            &>.user_bot {
+              margin-left: 71px;
+              width: 260px;
+              &>.el-form-item__content {
+                position: relative;
+                &>.el-input {
+                  &>.el-input__inner {
+                    width: 260px;
+                    height: 36px;
+                    border: 1px solid rgba(221, 221, 221, 1);
+                    border-radius: 4px;
+                  }
+  
+                  ::-webkit-input-placeholder {
+                    color: #999;
+                    font-size: 14px;
+                  }
+  
+                  :-moz-placeholder {
+                    color: #999;
+                    font-size: 14px;
+                  }
+  
+                  ::-moz-placeholder {
+                    color: #999;
+                    font-size: 14px;
+                  }
+  
+                  :-ms-input-placeholder {
+                    color: #999;
+                    font-size: 14px;
+                  }
+                }
+                &>span{
+                  position: absolute;
+                  top: 40px;
+                  left: 0;
+                  display: flex;
+                  align-items: center;
+                  height: 18px;
+                  font-size: 12px;
+                  color: #f3262d;
+                  &>img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 5px;
+                    
+                  }
+                }
+              }
+            }
+  
+            &>.submit {
+              &>.el-form-item__content {
+                &>.el-button {
+                  width: 64px;
+                  height: 30px;
+                  background: rgba(243, 38, 45, 1);
+                  border-radius: 2px;
+                  padding: 0;
+                  border:1px solid rgba(243,38,45,1);
+                }
+                &>.el-button:nth-child(1):hover{
+                  background: #F43C42;
+                }
+                &>.el-button:nth-child(2){
+                  background: #fff;
+                  color: #f3262d;
+                }
+                &>.el-button:nth-child(2):hover{
+                  background: rgba(243, 38, 45, 1);
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .time{
+    position: absolute;
+    left: 614px;
+    z-index: 2001;
+    top: 271px!important;
+    
+  }

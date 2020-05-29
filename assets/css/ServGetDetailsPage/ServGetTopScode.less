@@ -1,0 +1,407 @@
+.servGetTop {
+  width: 100%;
+  height: 40px;
+  background: #f4f6f8;
+  .serv_header {
+    width: 1210px;
+    margin: 0 auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .deposit_num{
+      color: #f3262d;
+    }
+    .serv_category {
+      max-width: 575px;
+      height: 40px;
+
+      & > li {
+        font-size: 13px;
+        color: #666;
+        max-width: 542px;
+        height: 40px;
+        line-height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+      }
+    }
+
+    .serv_stors {
+      & > li {
+        display: flex;
+        align-items: center;
+
+        & > div {
+          height: 20px;
+          font-size: 12px;
+          color: #fff;
+          text-align: center;
+          line-height: 20px;
+          border-radius: 4px;
+          margin-right: 5px;
+        }
+
+        & > div:nth-child(1) {
+          max-width: 116px;
+          font-size: 15px;
+          color: #666;
+          margin-right: 10px;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        & > .bl_name {
+          width: 52px;
+          background: #ffa24f;
+        }
+
+        & > .type_id_1 {
+          width: 32px;
+          background: #fabf4c;
+        }
+
+        & > .type_id_2 {
+          width: 32px;
+          background: #9eadfe;
+
+        }
+
+        & > .vipLevel {
+          width: 51px;
+          overflow: hidden;
+
+          & > img {
+            width: 51px;
+            height: 20px;
+          }
+        }
+
+        & > .marginsum {
+          height: 20px;
+          min-width: 65px;
+          display: flex;
+          align-items: center;
+          border: 1px solid #a1df2a;
+          position: relative;
+
+          & > .icon {
+            width: 24px;
+            height: 18px;
+          }
+
+          & > i {
+            background: #a1df2a;
+            min-width: 41px;
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+          }
+        }
+
+        .shopNum {
+          font-size: 14px;
+          height: 40px;
+
+          color: #f3262d;
+          display: flex;
+          align-items: center;
+          position: relative;
+          & > p {
+            color: #666;
+            font-size: 12px;
+            margin: 0 5px 0 10px;
+          }
+
+          & > .icon {
+            width: 19px;
+            height: 18px;
+          }
+
+          & > .gradeData {
+            position: absolute;
+            top: 40px;
+            left: -20px;
+            z-index: 9;
+            display: none;
+            width: 277px;
+            min-height: 330px;
+            border: 1px solid #ddd;
+            background: #fff;
+
+            .shopGrade {
+              display: flex;
+              border-bottom: 1px solid #e8e8e8;
+              width: 237px;
+              margin: auto;
+              padding: 20px 0;
+
+              & > .shopG {
+                font-size: 12px;
+                line-height: 12px;
+                color: #999;
+                text-align: left;
+                font-weight: 400;
+
+                & > span {
+                  display: block;
+                  margin:10px auto 17px;
+
+                }
+
+                & > ul {
+                  & > li {
+                    display: flex;
+                    //line-height: 22px;
+                    align-items: center;
+                    line-height: 17px;
+                    margin-top: 10px;
+                    .topColor {
+                      color: #f3262d;
+                      font-weight: bold;
+                    }
+
+                    .botColor {
+                      color: #a1df2a;
+                      font-weight: bold;
+                    }
+
+                    .endColor {
+                      color: #ff9b2f;
+                      font-weight: bold;
+                    }
+
+                    & > p:first-child {
+                      margin-right: 3px;
+                    }
+                    .fair_icon{
+                        width: 8px;
+                        height: 2px;
+                        background: #ff9b2f;
+                        margin-left: 7px;
+                    }
+                  }
+                }
+
+              }
+
+              &>.w_127{
+                  width: 127px;
+              }
+              .shopGrade_p {
+                & > ul {
+                  & > li {
+                    & > .icon {
+                      width: 13px;
+                      //height: 22px;
+                      height: 17px;
+                      margin-left: 5px;
+                    }
+                  }
+                }
+
+              }
+            }
+
+            .service {
+              font-size: 12px;
+              line-height: 12px;
+              color: #999;
+              //min-height: 110px;
+              min-height: 42px;
+              text-align: left;
+              margin: 16px auto 20px;
+              width: 237px;
+              & > a {
+                display: flex;
+                height: 22px;
+                margin: 8px 0 0px 0;
+                cursor: pointer;
+
+                & > img {
+                  width: 77px;
+                  height: 22px;
+                }
+
+                & > p {
+                  margin-left: 10px;
+                  line-height: 22px;
+                  overflow: hidden;
+                }
+              }
+
+              & > a:hover {
+                color: #f3262d;
+              }
+            }
+            .cashDeposit {
+              background: #A1DF2A;
+              padding: 20px 19px;
+
+              & > .cash {
+                height: 51px;
+                display: flex;
+                padding-left: 10px;
+
+                & > div:nth-child(1) {
+                  width: 51px;
+                  height: 51px;
+                  margin-right: 15px;
+                  border-radius: 50%;
+                  background: #fff;
+
+                  & > .icon_s {
+                    width: 70px;
+                    height: 70px;
+                    margin: -9px -7px;
+                  }
+                }
+
+                & > div:nth-child(2) {
+                  color: #fff;
+                  font-size: 12px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  margin-left: 12px;
+                  & > span {
+                    width: 111px;
+                    text-align: left;
+                    font-weight: bold;
+                  }
+
+                  & > span:nth-child(1) {
+                    font-size: 14px;
+                  }
+
+                  & > span:nth-child(2) {
+                    display: flex;
+
+                    & > p {
+                      color: #ff0027;
+                    }
+                  }
+                }
+              }
+
+              & > .deposit {
+                display: flex;
+                font-size: 12px;
+                line-height: 12px;
+                margin-top: 17px;
+                padding-left: 4px;
+                color: #fff;
+
+                & > p:nth-child(2) {
+                  color: #f3262d;
+                  margin-left: 3px;
+                }
+              }
+            }
+          }
+          .score_text{
+            margin-left: 4px;
+            font-weight: bold;
+          }
+        }
+
+        .shopNum:hover {
+          .gradeData {
+            display: block;
+          }
+        }
+
+        .callMy {
+          display: flex;
+          align-items: center;
+          margin-right: 0;
+          color: #666666;
+          text-align: center;
+          .services {
+            color: #5992ff;
+          }
+
+          .noSer {
+            color: #999;
+          }
+
+          p {
+            font-size: 12px;
+            color: #666;
+            margin-left: 5px;
+          }
+          &:hover {
+            &>span{
+                color: #ff0027;
+            }
+            p {
+              color: #ff0027;
+            }
+          }
+        }
+        .user_select:hover{
+            &>span{
+                color: #999;
+            }
+            &>p {
+                color: #666;
+              }
+        }
+      }
+    }
+  }
+}
+.serv_fws_wrap {
+  margin-top: 16px;
+  background: #a1df2a;
+  padding: 20px;
+
+  .margin-sum {
+    font-size: 12px;
+    color:  #f3262d;
+  ;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+
+    .mg-box {
+      margin-top: 11px;
+      font-weight: bold;
+    }
+
+    .margin-sum;
+    color: #fff;
+    font-size: 14px;
+
+    .bzj-icon {
+      font-size: 50px;
+      text-align: center;
+      margin-right: 18px;
+    }
+  }
+
+  .top-info {
+    font-size: 12px;
+    margin-top: 17px;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+.service_title,.sgt_title{
+  color: #666;
+  font-weight: bold;
+}
+.service_title{
+  font-size: 12px;
+  margin-bottom: 11px;
+}
+.service_text{
+  color: #999;
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+.clues-hall {
+    .clues-hall-box {
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .custom {
+        &>div {
+          color: #999;
+          display: flex;
+          height: 32px;
+          line-height: 32px;
+          .el-input{
+            width: 58px!important;
+          }
+          a {
+            text-decoration-line: none;
+            color: #333;
+            font-size: 14px;
+            height: 32px;
+            width: 58px;
+            border: 1px solid #999;
+            line-height: 32px;
+            text-align: center;
+            margin-left: 10px;
+            &:hover {
+              border: 1px solid #f3262d;
+              background: #f3262d;
+              color: #fff;
+            }
+          }
+          input {
+            width: 48px;
+            text-align: center;
+            margin: 0 5px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  
+    .el-pagination .el-pager li:hover {
+      color: #f3262d !important;
+    }
+  
+    .el-pagination .el-pager .active {
+      background-color: #f3262d !important;
+      color: #fff !important;
+    }
+  
+    .el-pagination .el-pager .active:hover {
+      color: #fff !important;
+    }
+  }
+  .el-input {
+    .el-input__inner {
+        border-radius: 0;
+        height: 36px;
+        line-height: 36px;
+    }
+}
+.item-box3{
+  &>.search{
+    &>.el-input{
+      &>.el-input__inner:focus{
+        border: 1px solid #5da6ff!important;
+        outline: 0!important;
+        box-shadow: 0px 0px 4px #5da6ff;
+      }
+    }
+  }
+}
+.search{
+  &>.el-input{
+    border: 1px solid #ECECEC!important;
+    &>.el-input__inner{
+      border: 1px solid #fff!important;
+    }
+  }
+}

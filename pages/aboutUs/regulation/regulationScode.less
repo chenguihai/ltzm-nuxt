@@ -1,0 +1,134 @@
+ .regulation_us {
+  background: #f4f6f8;
+
+  .regulation_content {
+    width: 1210px;
+
+    margin: 0 auto 50px;
+  }
+
+  .regulation_content_left {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      width: 210px;
+      min-height: 866px;
+      padding: 23px 23px 0 23px;
+      margin-top:20px;
+      background: #fff;
+      text-align: center;
+
+      h2 {
+        font-size: 18px;
+        color: #333;
+        line-height: 18px;
+        margin-bottom: 28px;
+        text-align: left;
+      }
+
+      &>.Tab {
+        margin-bottom: 28px;
+        cursor: pointer;
+
+        &>div {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            font-size: 14px;
+            color: #333;
+            line-height: 14px;
+          }
+
+          &>span {
+            font-size: 12px;
+            color: #999;
+          }
+        }
+
+
+      }
+      & > .Tab:hover {
+        &>div{
+          &>p,&>span{
+            color: #f3262d;
+          }
+        }
+      }
+      &>.active {
+        &>div {
+          p {
+            color: #f3262d;
+          }
+
+          &>span {
+            font-size: 12px;
+            color: #f3262d;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.content {
+  width: 982px;
+  margin-top: 20px;
+  min-height: 846px;
+  padding: 41px 49px 0 49px;
+  background: #fff;
+  .conNews {
+    margin-top: 64px;
+
+    .List {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      height: 75px;
+      width: 884px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      span{
+        font-size:14px;
+      }
+    }
+    .List:hover {
+      color: #f3262d;
+
+    }
+
+  }
+
+}
+.text{
+  &>span{
+    font-size: 20px;
+    color: #333;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+}
+.OitemNone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%!important;
+  &>div{
+      display: flex;
+      align-items: center;
+      img{
+          width: 90px;
+          height: 116px;
+      }
+p{
+      font-size: 14px;
+      color: #666;
+  }
+  }
+ 
+}

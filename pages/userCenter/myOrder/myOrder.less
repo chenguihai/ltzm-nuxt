@@ -1,0 +1,500 @@
+.orderPage {
+
+  .el-dialog__wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  .mayOrder {
+    &>.invoice_pop{
+        &>.el-dialog{
+            top: 0!important;
+            transform: translateY(0)!important;
+        }
+    }
+    // padding: 0 0 94px 0;
+    .el-dialog__headerbtn:focus .el-dialog__close,
+    .el-dialog__headerbtn:hover .el-dialog__close {
+      color: #f3262d;
+    }
+
+    .el-dialog__headerbtn {
+      top: 10px !important;
+    }
+
+    .el-dialog__header {
+      text-align: center;
+      background: #f5f5f5;
+      padding: 15px;
+      font-weight: 600;
+
+      .el-dialog__title {
+        font-size: 16px;
+        color: #333;
+      }
+    }
+  }
+
+  .el-form-item.is-success .el-input__inner {
+    border-color: #DCDFE6;
+  }
+
+  // #block {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   margin: 30px 22px !important;
+  //   width: unset;
+  //   // position: absolute;
+  //   // bottom: 0;
+  //   // right: 20px;
+  //   .el-input__inner {
+  //     height: 28px;
+  //   }
+  // }
+
+  .myDeposit_bot {
+    // overflow: auto;
+    position: relative;
+
+    .el-input__inner:focus,
+    .el-range-editor.is-active {
+      border: 1px solid #5da6ff;
+      outline: 0;
+      box-shadow: 0px 0px 4px #5da6ff;
+    }
+
+    .el-input__inner {
+      height: 36px;
+      border-radius: 0;
+
+    }
+
+    &>.el-from {
+      margin-top: 45px;
+
+    }
+
+    .el-form-item__content {
+      line-height: 30px;
+
+      .el-date-editor--daterange.el-input__inner {
+        width: 286px;
+        overflow: hidden;
+        border-radius: 0;
+      }
+
+      .el-range-input {
+        width: 37%;
+      }
+
+      .el-range__icon {
+        line-height: 30px;
+      }
+
+      .el-range-separator {
+        line-height: 28px;
+        width: 8%;
+      }
+
+      .el-range-input {
+        // margin-left: 5px;
+      }
+    }
+
+    .el-form-item {
+      float: left;
+      margin-right: 30px;
+    }
+
+    .user_bot {
+      .el-form-item__content {
+        width: 197px;
+        height: 34px;
+      }
+    }
+
+    .region_bot {
+      margin-right: 30px;
+
+      &>.el-form-item__content {
+        width: 120px;
+        height: 36px;
+
+        &>.el-select {
+          &>.el-input {
+            &>.el-input__inner {
+              color: #333;
+              border-radius: 0;
+            }
+            &>.el-input__suffix{
+              overflow: hidden;
+              &>.el-input__suffix-inner{
+                &>.el-input__icon{
+                  height: 107%;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .submit {
+      .el-button {
+        background: #f3262d;
+        border: 0;
+        height: 36px;
+        line-height: 6px;
+      }
+    }
+
+
+  }
+  .InvoiceApplication_box {
+    .el-form-item__label {
+      padding: 0 20px 0 0 !important;
+      color: #666 !important;
+      width: 117px;
+    }
+
+    &>.el-dialog {
+      width: 560px;
+
+      .el-dialog__header {
+        text-align: center;
+
+        span {
+          font-size: 16px;
+          color: #333;
+        }
+      }
+
+      &>.el-dialog__body {
+        // padding: 30px 40px !important;
+
+        &>.el-form {
+          &>.is-success {
+            &>.el-form-item__content {
+              display: flex;
+              flex-direction: column;
+
+              &>.el-select {
+                &>.is-focus{
+                   &>.el-input__inner:focus {
+                  border: 1px solid #5da6ff !important;
+                  ;
+                  outline: 0 !important;
+                  ;
+                  box-shadow: 0px 0px 4px #5da6ff !important;
+                  ;
+                }
+                }
+
+              }
+            }
+
+          }
+          &>.radio {
+            &>.number_1 {
+              &>.is-success {
+                &>.el-form-item__content {
+                  &>.el-input {
+                    &>.el-input__inner:focus {
+                      border: 1px solid #5da6ff !important;
+                      ;
+                      outline: 0 !important;
+                      ;
+                      box-shadow: 0px 0px 4px #5da6ff !important;
+                      ;
+                    }
+                  }
+                }
+
+              }
+            }
+          }
+          &>.el-form-item{
+            &>.el-form-item__content{
+              display: flex;
+              flex-direction: column;
+              &>.flagClick{
+                &>.el-input__inner{
+                  border-color: #F56C6C;
+                }
+              }
+              &>span{
+                color: #f3262d;
+                font-size: 12px;
+                line-height: 18px;
+                background: url('../../../assets/img/icon-error.png') no-repeat;
+                padding-left: 23px;
+                margin-top: 5px;
+              }
+              &>.el-radio-group{
+                height: 36px;
+                display: flex;
+                align-items: center;
+                &>.el-radio{
+                  &>.el-radio__input{
+                    &>.el-radio__inner:hover{
+                      border-color:#f3262d;
+                    }
+                  }
+                  &>.el-radio__label{
+                   color: #666;
+                  }
+                }
+                &>.is-checked{
+                  &>.is-checked{
+                    &>.el-radio__inner{
+                      border-color: #f3262d;
+    background: #f3262d;
+                    }
+                    &>.el-radio__label{
+                      color: #666;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .el-form-item__error {
+          top: 97%;
+          left: 117px;
+          padding-left: 24px;
+          height: 18px;
+          padding-top: 2px;
+          background: url('../../../assets/img/error.png') no-repeat;
+
+        }
+
+        .el-input {
+          width: 331px;
+          height: 36px;
+          line-height: 36px;
+
+          .el-input__inner {
+            height: 36px;
+            line-height: 36px;
+            color: #333;
+
+            .el-input__icon {
+              line-height: 36px !important;
+            }
+          }
+
+          .el-input__inner:focus {
+            border: 1px solid #5da6ff;
+            outline: 0;
+            box-shadow: 0px 0px 4px #5da6ff;
+          }
+        }
+
+        .el-form {
+          .el-form-item {
+            // margin-bottom: 16px;
+
+            .el-form-item__content {
+              text-align: left;
+            }
+          }
+
+          &>.el-form-item:nth-child(2) {
+            .el-select {
+              color: #333;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+.disabl{
+  &>.is-disabled{
+    &>.el-input__inner{
+      color: #C0C4CC!important;
+    }
+  }
+}
+  .invoiceaddress {
+    &>.el-dialog {
+      width: 560px;
+      height: 458px;
+
+      &>.el-dialog__body {
+        padding: 20px 63px !important;
+
+        &>.el-form {
+          .el-form-item__label {
+            width: 104px;
+          }
+
+          &>.el-form-item {
+            &>.el-form-item__content {
+              &>.el-input {
+                &>.el-input__inner:focus {
+                  border: 1px solid #5da6ff !important;
+                  ;
+                  outline: 0 !important;
+                  ;
+                  box-shadow: 0px 0px 4px #5da6ff !important;
+                  ;
+                }
+              }
+              .is-opened {
+                  .is-focus {
+                    .el-input__inner{
+                    //    border: 1px solid #5da6ff !important;
+                    // outline: 0 !important;
+                    // box-shadow: 0px 0px 4px #5da6ff !important;
+                    }
+
+
+
+                }
+              }
+            }
+          }
+
+          .el-form-item:nth-child(2) {
+            .el-form-item__content {
+              .el-input {
+                .el-input__inner {
+                  float: right;
+                  // margin-right: -4px;
+                }
+              }
+            }
+          }
+
+          .el-form-item {
+            // margin-bottom: 16px;
+
+            .el-input {
+              width: 100%;
+              float: left;
+            }
+
+            .el-input__inner {
+              width: 330px;
+              height: 36px;
+
+            }
+
+            .el-input__inner:focus {
+              border: 1px solid #5da6ff;
+              outline: 0;
+              box-shadow: 0px 0px 4px #5da6ff;
+            }
+          }
+
+          .el-form-item__content {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          &>.el-form-item:first-child {
+            .el-form-item__content {
+              display: flex;
+              flex-wrap: wrap;
+
+              .el-select {
+                width: 106px;
+                height: 36px;
+                float: left;
+                margin-right: 6px;
+                margin-bottom: 10px;
+
+                .el-input__inner {
+                  width: 106px;
+                  height: 36px;
+                }
+
+                .el-input__suffix {
+                  right: -29px;
+                }
+              }
+
+              .addressX {
+                width: 116%;
+              }
+            }
+          }
+        }
+      }
+
+      .el-dialog__footer {
+        padding: 0 20px 40px;
+        .invoicsub {
+          margin-bottom: 40px;
+
+          .el-button {
+            padding: 12px 56px;
+          }
+        }
+      }
+    }
+  }
+
+  .InvoiceApplication_box,
+  .invoiceaddress {
+    .el-dialog__footer {
+      text-align: center;
+
+      .el-button {
+        padding: 12px 48px;
+      }
+
+      .el-button--primary {
+        color: #fff;
+        background: #f3262d;
+        border: 0;
+      }
+    }
+  }
+
+  .invoiceaddress {
+    &>.el-dialog {
+      &>.el-dialog__body {
+        &>.el-form {
+          &>div:nth-child(2) {
+            &>.el-form-item__content {
+              &>.el-form-item__error {
+                top: 104%;
+                left: 79px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkI {
+    .el-button {
+      transition: 0s !important;
+      padding: 0;
+    }
+  }
+}
+
+.time {
+  position: absolute;
+  left: 614px;
+  z-index: 2001;
+  top: 271px !important;
+
+}
+.resClick{
+  min-width: 331px !important;
+}
+.addArea{
+  &>.el-cascader-panel{
+      height: 250px;
+      overflow: hidden;
+  }
+}

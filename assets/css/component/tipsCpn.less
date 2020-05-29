@@ -1,0 +1,59 @@
+@import "../mixin";
+.hint_content {
+  text-align: center;
+  color: @c_666;
+}
+.tips {
+  padding: 0 0 24px;
+  box-shadow: 0px 6px 19px 1px rgba(51, 50, 50, 0.11);
+  .el-dialog__header {
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: @c_333;
+    font-size: @f_16;
+    background: @c_bg;
+    position: relative;
+  }
+  .el-dialog__headerbtn{
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+  }
+  .el-dialog__body {
+    padding: 50px 20px 56px;
+  }
+
+  .el-dialog__footer {
+    text-align: center;
+    padding: 0;
+
+    button {
+      color: @c_666;
+      font-size: 14px;
+      //background: @c_danger;
+      background: @c_f4f4f4;
+      height: 30px;
+      border: 1px solid @c_dfdfdf;
+      border-radius: 4px;
+    }
+
+    .button_active {
+      background: #f3262d;
+      color: #fff;
+      border-color: #f3262d;
+    }
+
+    .el-button:active, .el-button:hover {
+      background-color: @c_fff;
+
+    }
+
+    .button_active.el-button:active, .button_active.el-button:hover {
+      background: #f3262d;
+      opacity: 0.9;
+    }
+  }
+}
+

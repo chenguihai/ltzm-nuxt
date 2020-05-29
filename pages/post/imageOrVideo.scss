@@ -1,0 +1,258 @@
+.turn-time-box {
+    width: 1390px;
+    margin: 10px auto 90px;
+    .v-bottom {
+        display: flex;
+        justify-content: space-between;
+        .turn-time {
+            flex: 1;
+        }
+    }
+}
+
+.m-have-pages {
+    /deep/ .list-con {
+        min-height: 360px;
+    }
+}
+
+.more-btn {
+    width: 70px;
+    height: 22px;
+    background: rgba(244, 246, 248, 1);
+    border: 1px solid rgba(210, 213, 219, 1);
+    border-radius: 100px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+    }
+}
+
+.sear-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 36px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 100px;
+    overflow: hidden;
+    padding-right: 12px;
+    input {
+        flex: 1;
+        height: 100%;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 16px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+    }
+    i {
+        font-size: 15px;
+        color: #999999;
+    }
+}
+
+/deep/ .t1 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    .tab {
+        margin-right: 14px;
+        &::after {
+            height: 2px;
+            bottom: -15px;
+        }
+        &::before {
+            bottom: -13px;
+            border-bottom: 5px solid #f3262d;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+    }
+}
+
+// 筛选
+.v-top {
+    position: relative;
+    .typ-line {
+        min-height: 42px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: flex-start;
+        padding: 14px 10px 14px 20px;
+        /deep/ .el-input__inner {
+            border-color: #ccc;
+        }
+        >p {
+            color: rgba(153, 153, 153, 1);
+            margin-right: 19px;
+            color: #999999;
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+        }
+        .typ-box {
+            display: flex;
+            align-items: center;
+            padding-right: 60px;
+            position: relative;
+            flex: 1;
+            flex-wrap: wrap;
+            li {
+                font-size: 14px;
+                font-family: Microsoft YaHei;
+                line-height: 31px;
+                font-weight: 400;
+                margin-right: 44px;
+                color: #006699;
+                cursor: pointer;
+                &.active,
+                &:hover {
+                    color: #f3262d;
+                }
+                // 更多
+                &.typ-btn {
+                    width: 48px;
+                    height: 22px;
+                    background: rgba(255, 255, 255, 1);
+                    border: 1px solid rgba(230, 230, 230, 1);
+                    text-align: center;
+                    line-height: 22px;
+                    font-size: 12px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: rgba(51, 51, 51, 1);
+                    position: absolute;
+                    right: 9px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    padding-right: 13px;
+                    overflow: hidden;
+                    div {
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                        top: 5px;
+                        right: 4px;
+                        transition: 0.5s;
+                        height: 30px;
+                    }
+                    &:hover,
+                    &.active {
+                        color: #f3262d;
+                        border: 1px solid #f3262d;
+                        div {
+                            top: -13px;
+                            i {
+                                color: #f3262d;
+                            }
+                        }
+                    }
+                }
+                // 确定
+                &.sure-btn {
+                    width: 46px;
+                    height: 25px;
+                    background: rgba(255, 255, 255, 1);
+                    border: 1px solid rgba(230, 230, 230, 1);
+                    position: absolute;
+                    right: 9px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    text-align: center;
+                    line-height: 25px;
+                    font-size: 12px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: rgba(51, 51, 51, 1);
+                    &:hover {
+                        color: #f3262d;
+                        border: 1px solid #f3262d;
+                    }
+                }
+                // 下拉
+                &.city-sel-boxp {
+                    position: absolute;
+                    right: 195px;
+                }
+                &.city-sel-box {
+                    position: absolute;
+                    right: 25px;
+                }
+                .el-select {
+                    width: 155px;
+                }
+            }
+            .date {
+                height: 26px;
+            }
+        }
+        &.open {
+            border: 2px solid rgba(237, 210, 139, 1);
+        }
+        &.center {
+            padding: 0 0 0 20px;
+            align-items: center;
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
+    .top-oth {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        width: 100%;
+        padding-left: 20px;
+        p {
+            height: 24px;
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(221, 221, 221, 1);
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(102, 102, 102, 1);
+            line-height: 24px;
+            margin-right: 6px;
+            padding: 0 4px;
+            span {
+                color: #f3262d;
+                i {
+                    cursor: pointer;
+                }
+            }
+            &:first-child {
+                margin-right: 8px;
+                font-size: 14px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+            }
+            &:first-child,
+            &:last-child {
+                color: rgba(153, 153, 153, 1);
+                padding: 0;
+                border: none;
+            }
+            &:last-child {
+                cursor: pointer;
+                &:hover {
+                    color: #f3262d;
+                }
+            }
+        }
+    }
+}

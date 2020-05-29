@@ -1,0 +1,40 @@
+@c_fff: #fff;
+@c_ccc: #ccc;
+@c_f4f4f4: #F4F4F4;
+@c_333: #333;
+@c_666: #666;
+@c_999: #999;
+@c_06c: #0066CC;
+@c_069: #006699;
+@c_e8e8e8: #E8E8E8;
+@c_fe3a08: #FE3A08;
+@c_f62222: #F62222;
+@c_danger: #F3262D;
+@c_hover: #F43C42;
+@c_fdd: #FFDDDD;
+@c_efefef: #EFEFEF;
+@c_bg: #F5F5F5;
+@c_dfdfdf: #DFDFDF;
+
+@f_36: 36px;
+@f_20: 20px;
+@f_16: 16px;
+@f_14: 14px;
+@f_12: 12px;
+
+@scrollbar_color: #999;
+.mixin_scroll-default-style (@width: 2px) {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 @width rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar {
+    width: @width;
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: @scrollbar_color;
+    border-radius: @width;
+    background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)
+  }
+}

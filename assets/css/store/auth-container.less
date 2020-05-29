@@ -1,0 +1,924 @@
+.authForm {
+  margin-left: 268px;
+  margin: 20px 20px 20px 268px;
+
+  .el-form-item__error {
+    left: 254px;
+  }
+
+  .el-input__inner {
+    width: 246px;
+  }
+
+  .input_desc {
+    position: relative;
+    top: -5px;
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+}
+
+.companyForm {
+  padding-top: 20px;
+  margin-left: 210px;
+  .el-form-item__error {
+    left: 350px;
+  }
+
+  .form_date {
+    width: 380px;
+  }
+}
+
+.step4Form {
+  .el-form-item__error {
+    left: 210px;
+  }
+}
+
+.ac_container {
+  flex: 1;
+  background: #fff;
+  margin-left: 20px;
+  margin-top: 20px;
+
+  .uplaod, .uplaod_id {
+    .avatar-uploader .el-upload {
+      background-color: #f4f6f8;
+      position: relative;
+      overflow: hidden;
+
+      font-size: 28px;
+      color: #8c939d;
+      width: 262px;
+      height: 175px;
+      line-height: 175px;
+      text-align: center;
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+
+    .avatar-uploader-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #DB0B07;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      z-index: 10;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    .avatar {
+      width: 262px;
+      height: 175px;
+      display: block;
+    }
+  }
+
+  .uplaod_id {
+    display: flex;
+    border-top: 1px solid #F2F6F8;
+
+    &.active {
+      border: none;
+    }
+
+    .left {
+      padding-top: 26px;
+      padding-right: 50px;
+      border-right: 1px solid #F2F6F8;
+
+      &.active {
+        padding-top: 60px;
+      }
+
+      p {
+        color: #333;
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 27px;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding-top: 26px;
+
+      &.active {
+        padding-top: 60px;
+      }
+
+      p {
+        padding-left: 20px;
+        color: #0066CC;
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 87px;
+
+        .img {
+          width: 194px;
+          height: 138px;
+          border: 1px solid #eee;
+          background: url("~assets/img/store/idcar1.jpg") no-repeat center;
+          background-size: 156px 101px;
+
+          &.other_side {
+            background-image: url("~assets/img/store/idcar2.jpg");
+          }
+        }
+
+        p {
+          font-size: 12px;
+          color: #666;
+          text-indent: 1em;
+          position: relative;
+          line-height: 26px;
+
+          &:before {
+            display: block;
+            content: '';
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            background: #ccc;
+            z-index: 2;
+            top: 11px;
+            border-radius: 50%;
+            left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .uplaod {
+    display: flex;
+    margin-top: 40px;
+
+    .left {
+      margin-right: 20px;
+    }
+
+    .right {
+      flex: 1;
+
+      .right_title {
+        font-size: 14px;
+        line-height: 1em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 24px;
+        color: #666;
+        text-indent: 1em;
+        position: relative;
+
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 10px;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #ccc;
+        }
+      }
+    }
+  }
+
+  /*审核成功 或者失败*/
+
+  .f-box {
+    height: 219px;
+    background: rgba(255, 249, 247, 1);
+    display: flex;
+    align-items: center;
+    padding-left: 298px;
+
+    .f_img {
+      height: 134px;
+      width: 96px;
+    }
+
+    .f_right {
+      padding-left: 10px;
+
+      .title {
+        font-size: 24px;
+        line-height: 24px;
+        color: #F3262D;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1em;
+        color: #333;
+        margin: 22px 0 26px;
+      }
+    }
+
+    .f_btn_wrap {
+      display: flex;
+
+      a {
+        margin-right: 20px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+        border: 1px solid #dfdddc;
+        background: #fff;
+        border-radius: 4px;
+        width: 130px;
+        text-decoration: none;
+      }
+
+      .btn {
+        color: #fff;
+        background: linear-gradient(90deg, rgba(255, 67, 11, 1), rgba(254, 13, 2, 1));
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+  }
+
+  .finish-person {
+    h3 {
+      font-size: 18px;
+      color: #333;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    .inner-steps {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 28px;
+
+      span {
+        color: #fff;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+        line-height: 1.5;
+        background: rgba(208, 213, 221, 1);
+        border-radius: 50%;
+        border: 3px solid rgba(241, 242, 245, 1);
+
+        &.active {
+          background: #F3262D;
+          border: 3px solid rgba(249, 190, 190, 1);
+          font-size: 13px;
+        }
+
+      }
+
+      span:nth-child(1) {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          display: block;
+          content: '填写本人信息';
+          color: #999;
+          width: 6em;
+          z-index: 1;
+          top: 30px;
+          left: -2.2em;
+          font-size: 14px;
+        }
+      }
+
+      span:nth-child(3) {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          display: block;
+          content: '管理员审核';
+          color: #999;
+          width: 6em;
+          z-index: 1;
+          top: 30px;
+          left: -2.2em;
+          font-size: 14px;
+        }
+      }
+
+      span:nth-child(n) {
+        &.active {
+          &:after {
+            color: #FF0027;
+          }
+        }
+      }
+
+      i {
+        width: 157px;
+        background: url("~assets/img/store/line-default.png") no-repeat left center;
+        height: 15px;
+        background-size: 157px 15px;
+
+        &.active {
+          background: url("~assets/img/store/line-red.png") no-repeat left center;
+          height: 15px;
+          background-size: 157px 15px;
+        }
+      }
+    }
+  }
+
+  .finish-last {
+    padding: 116px 0 30px;
+
+    .finish_title {
+      display: flex;
+      align-items: center;
+      color: #349A67;
+      font-size: 24px;
+      height: 43px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #F2F6F8;
+      margin-bottom: 16px;
+      padding-left: 316px;
+
+      .finish_icon {
+        width: 27px;
+        height: 27px;
+      }
+    }
+
+    .finish_desc {
+      padding-left: 350px;
+
+      > p {
+        font-size: 14px;
+        color: #333;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+/*初始状态样式*/
+
+.ac_default {
+  .title {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: #333;
+    padding-left: 24px;
+    border-bottom: 1px solid #E8E8E8;
+    font-size: 16px;
+  }
+
+  .container {
+    display: flex;
+
+    .item {
+      width: 337px;
+      height: 371px;
+      margin: 20px 24px;
+      background: url("~assets/img/gerenshiming.png") no-repeat center;
+
+      &:hover {
+        box-shadow: 0px -2px 18px 1px rgba(53, 53, 53, 0.15);
+      }
+
+      .head {
+        width: 337px;
+        height: 150px;
+        background-size: 100% 150px;
+        opacity: 0.82;
+        color: #fff;
+
+        div {
+          padding-top: 68px;
+          padding-left: 84px;
+          font-size: 24px;
+          line-height: 24px;
+          text-indent: 50px;
+        }
+
+        p {
+          margin-top: 18px;
+          padding-left: 84px;
+          font-size: 14px;
+          line-height: 14px;
+          text-indent: 36px;
+        }
+      }
+
+      .text {
+        p:nth-child(1) {
+          font-size: 14px;
+          line-height: 20px;
+          color: #666;
+          padding: 20px 30px 70px;
+        }
+
+        p:nth-last-child(1) {
+          font-size: 12px;
+          line-height: 12px;
+          color: #999;
+          margin-top: 8px;
+          text-align: center;
+        }
+
+        div {
+          text-align: center;
+
+          button {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #fff;
+            width: 120px;
+            height: 34px;
+            background: linear-gradient(90deg, rgba(255, 108, 0, 1), rgba(255, 79, 1, 1));
+
+            &:hover {
+              opacity: 0.82;
+            }
+          }
+        }
+      }
+    }
+
+    .company {
+      margin-left: 44px;
+      background: url("~assets/img/qiyeshiming.png") no-repeat center;
+
+      .text {
+        p:nth-child(1) {
+          padding-bottom: 50px;
+        }
+
+        div {
+          button {
+            background: linear-gradient(90deg, rgba(97, 145, 255, 1), rgba(53, 48, 255, 1));
+          }
+        }
+      }
+    }
+  }
+}
+
+/*个人认证*/
+
+.ac_private {
+  padding-left: 30px;
+
+  .top {
+    border-bottom: 1px solid #F2F6F8;
+    padding-bottom: 10px;
+
+    h3 {
+      padding: 20px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .steps {
+      width: 417px;
+      height: 84px;
+      margin: auto;
+      background: url("~assets/img/store/steps.png") no-repeat center;
+    }
+  }
+
+  .base {
+    h3 {
+      font-size: 18px;
+      line-height: 1em;
+      color: #333;
+      margin-top: 20px;
+    }
+  }
+}
+
+/*企业认证*/
+.finish-company {
+  h3 {
+    font-size: 18px;
+    color: #333;
+    padding-top: 20px;
+    padding-left: 26px;
+  }
+
+  .result {
+    padding-bottom: 20px;
+    margin-top: 60px;
+    border-top: 1px solid #E8E8E8;
+  }
+
+  .inner-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+
+    span {
+      color: #fff;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      font-size: 13px;
+      line-height: 1.5;
+      background: rgba(208, 213, 221, 1);
+      border-radius: 50%;
+      border: 3px solid rgba(241, 242, 245, 1);
+
+      &.active {
+        background: #F3262D;
+        border: 3px solid rgba(249, 190, 190, 1);
+        font-size: 13px;
+      }
+
+    }
+
+    span:nth-child(1) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '上传企业信息';
+        color: #999;
+        width: 6em;
+        z-index: 1;
+        top: 30px;
+        left: -2.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(3) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '上传法人信息';
+        color: #999;
+        width: 6em;
+        z-index: 1;
+        top: 30px;
+        left: -2.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(5) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '对公账户信息及打款回填';
+        color: #999;
+        width: 12em;
+        z-index: 1;
+        top: 30px;
+        left: -5.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(7) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '管理员审核';
+        color: #999;
+        width: 6em;
+        z-index: 1;
+        top: 30px;
+        left: -2.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(n) {
+      &.active {
+        &:after {
+          color: #FF0027;
+        }
+      }
+    }
+
+    i {
+      width: 157px;
+      background: url("~assets/img/store/line-default.png") no-repeat left center;
+      height: 15px;
+      background-size: 157px 15px;
+
+      &.active {
+        background: url("~assets/img/store/line-red.png") no-repeat left center;
+        height: 15px;
+        background-size: 157px 15px;
+      }
+    }
+  }
+}
+
+.steps1, .steps2, .steps3, .ac_steps4 {
+  padding-left: 30px;
+
+  h3 {
+    font-size: 18px;
+    line-height: 1em;
+    color: #333;
+    padding-top: 24px;
+  }
+
+  .inner-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 0;
+
+    span {
+      color: #fff;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      font-size: 13px;
+      line-height: 1.5;
+      background: rgba(208, 213, 221, 1);
+      border-radius: 50%;
+      border: 3px solid rgba(241, 242, 245, 1);
+
+      &.active {
+        background: #F3262D;
+        border: 3px solid rgba(249, 190, 190, 1);
+        font-size: 13px;
+      }
+
+      &.personal {
+        width: 320px;
+      }
+    }
+
+    span:nth-child(1) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '上传企业信息';
+        color: #999;
+        width: 6em;
+        z-index: 1;
+        top: 30px;
+        left: -2.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(3) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '上传法人信息';
+        color: #999;
+        width: 6em;
+        z-index: 1;
+        top: 30px;
+        left: -2.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(5) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '对公账户信息及打款回填';
+        color: #999;
+        width: 12em;
+        z-index: 1;
+        top: 30px;
+        left: -5.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(7) {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '管理员审核';
+        color: #999;
+        width: 6em;
+        z-index: 1;
+        top: 30px;
+        left: -2.2em;
+        font-size: 14px;
+      }
+    }
+
+    span:nth-child(n) {
+      &.active {
+        &:after {
+          color: #FF0027;
+        }
+      }
+    }
+
+    i {
+      width: 157px;
+      background: url("~assets/img/store/line-default.png") no-repeat left center;
+      height: 15px;
+      background-size: 157px 15px;
+
+      &.active {
+        background: url("~assets/img/store/line-red.png") no-repeat left center;
+        height: 15px;
+        background-size: 157px 15px;
+      }
+
+      &.personal {
+        background-size: 320px 15px;
+      }
+    }
+  }
+
+  .box {
+    width: 755px;
+    height: 104px;
+    background: #fff;
+    border: 1px solid #FFDEDE;
+    margin: 20px auto 0;
+    padding: 18px 0 16px 25px;
+
+    .hint_text {
+      font-size: 14px;
+      line-height: 1em;
+      color: #0066CC;
+    }
+
+    .desc_text {
+      margin-top: 10px;
+      color: #666;
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+
+  .info {
+    border-bottom: 1px solid #F2F6F8;
+
+    &.border_none {
+      border-bottom: none;
+    }
+
+    .companyForm {
+      input, textarea {
+        width: 340px;
+      }
+      .el-range-input{
+        width:150px;
+      }
+    }
+  }
+
+  .bottom {
+    h3:nth-child(1) {
+      font-size: 18px;
+      color: #333;
+    }
+
+    h3:nth-child(1) + p {
+      font-size: 12px;
+    }
+
+    .title_h3 {
+      padding: 68px 0 48px;
+    }
+
+  }
+
+  .card {
+    width: 271px;
+    height: 126px;
+    line-height: 126px;
+    background: url("~assets/img/store/authcard.png") no-repeat center;
+    background-size: cover;
+    text-indent: 131px;
+    font-size: 18px;
+  }
+}
+
+.steps2 {
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+}
+
+.ac_steps4 {
+  .center {
+    h3 {
+      padding-bottom: 16px;
+      margin-top: 38px;
+    }
+
+    .img-c {
+      height: 112px;
+      width: 109px;
+      margin: 0 auto;
+      background: url("~assets/img/store/auth_last.png") no-repeat center center;
+    }
+
+    > p {
+      width: 597px;
+      color: #333;
+      font-size: 14px;
+      line-height: 30px;
+      margin: 38px auto 32px;
+      text-align: center;
+    }
+
+    .center_form {
+      display: flex;
+      justify-content: center;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        line-height: 30px;
+      }
+
+      span + input {
+        width: 120px;
+        height: 36px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(223, 223, 223, 1);
+        outline: none;
+      }
+    }
+
+    .text-last {
+      display: flex;
+      width: 607px;
+      margin: 0 auto;
+      font-size: 14px;
+
+      .hint {
+        color: #2967C5;
+        width: 114px;
+      }
+
+      p {
+        line-height: 20px;
+        color: #999;
+
+        span {
+          color: #F3262D;
+        }
+      }
+    }
+  }
+
+}

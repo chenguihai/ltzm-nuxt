@@ -1,0 +1,99 @@
+.aboutUs_us {
+    background: #f4f6f8;
+    .aboutUs_content {
+      width: 1210px;
+  
+      margin: 0 auto 50px;
+    }
+    .aboutUs_content_left {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        width: 210px;
+        min-height: 866px;
+        padding: 23px 23px 0 23px;
+  
+        background: #fff;
+        text-align: center;
+        h2 {
+          font-size: 18px;
+          color: #333;
+          line-height: 18px;
+          margin-bottom: 28px;
+          text-align: left;
+        }
+        & > .Tab {
+          margin-bottom: 28px;
+          cursor: pointer;
+          & > div {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              color: #333;
+              line-height: 14px;
+            }
+            &>span{
+              font-size: 12px;
+              color: #999;
+            }
+          }
+  
+        
+        }
+        & > .Tab:hover {
+          &>div{
+            &>p,&>span{
+              color: #f3262d;
+            }
+          }
+        }
+        & > .active {
+          & > div {
+            p {
+              color: #f3262d;
+            }
+             &>span{
+              font-size: 12px;
+              color: #f3262d;
+            }
+          }
+  
+          .content {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 982px;
+    margin-top: 20px;
+    min-height: 846px;
+    padding: 41px 49px 0 49px;
+    background: #fff;
+    &>div{
+      &>:nth-child(1){
+        font-size: 20px;
+        color: #333;
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      &>:nth-child(2){
+        font-size: 14px;
+        color: #666;
+        text-align: left;
+        width: 884px;
+        overflow: hidden;
+      }
+    }
+    
+  }
+  img{
+    max-width: 884px;
+  }

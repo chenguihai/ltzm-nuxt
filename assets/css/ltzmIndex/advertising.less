@@ -1,0 +1,81 @@
+.advertising_left {
+    &>.advertising_ban {
+        width: 100%;
+        &>.el-carousel {
+            width: 100%;
+            &>.el-carousel__indicators {
+                width: 100%;
+                height: 20px;
+                bottom: 126px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                padding-left: 24px;
+                align-items: flex-end;
+                &>.el-carousel__indicator{
+                    padding: 0!important;
+                    margin-right: 5px;
+                    background: #fff;
+                    border-radius: 50%;
+                    &>.el-carousel__button {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                    }
+                }
+                &>.el-carousel__indicator:last-child{
+                    margin-right:0;
+                }
+              
+                &>.el-carousel__indicator--horizontal {
+                    padding: 0;
+                    background: #fff!important; 
+                }
+                &>.is-active{
+                    background: #F52122!important;
+                    width: 16px;
+                    opacity: 0.6;
+                    border-radius: 8px;
+                }
+            }
+
+            .is-active {
+                .el-carousel__button {
+                    background: #535454!important;
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
+
+    &>.advertising:nth-child(even) {
+        background: #f4f6f8;
+    }
+
+    .el-carousel__indicators--horizontal {
+        bottom: 151px;
+    }
+}
+
+.advertising_img {
+    .banner {
+        .el-carousel {
+            background: pink;
+            margin-bottom: 15px;
+
+            .el-carousel__container {
+                height: 100px;
+
+                .el-carousel__item {
+                    img {
+                        display: block;
+                        width: 1210px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,313 @@
+.payment_buy {
+    .payment_data {
+        .payment_bot {
+
+            .el-radio__label {
+                display: flex;
+                align-items: center;
+            }
+
+            .el-radio__input.is-checked+.el-radio__label {
+                color: #333;
+
+                .pay_color {
+                    color: #ff0027;
+                }
+
+            }
+        }
+    }
+
+    &>.el-radio {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+
+        .el-radio__label {
+            display: flex;
+            align-items: center;
+            margin-right: 18px;
+        }
+
+        .el-radio__label {
+            display: flex;
+            align-items: center;
+        }
+
+
+    }
+
+    .el-radio.is-bordered+.el-radio.is-bordered {
+        margin: 0;
+        padding: 0 0 0 10px;
+    }
+
+    .el-radio.is-bordered {
+        border: 0;
+        border: 1px solid transparent;
+        border-bottom-color: #DFDFDF;
+    }
+
+    .el-radio.is-bordered.is-checked {
+        //border: 1px solid #f3262d;
+        border-color: #f3262d;
+    }
+
+    .t_money {
+        &>.el-dialog {
+            width: 500px;
+            height: 334px;
+            position: absolute;
+            left: 50%!important;
+            top: 50%!important;
+            margin-left: -250px!important;
+            margin-top: -167px !important;
+            transform: translateY(0)!important;
+            &>.el-dialog__header {
+                padding: 0;
+                height: 46px;
+                line-height: 46px;
+                text-align: center;
+                background: #F5F5F5;
+
+                &>.el-dialog__headerbtn {
+                    top: 10px;
+                    font-size: 20px !important;
+                }
+
+                &>.el-dialog__headerbtn:hover {
+                    &>.el-dialog__close {
+                        color: #f3262d;
+                    }
+                }
+            }
+
+            .el-dialog__body {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 288px;
+
+                .img_pay {
+                    width: 200px;
+                    height: 200px;
+                    background: #ccc;
+                    margin-top: -50px;
+                }
+            }
+        }
+
+    }
+
+    .bank_money {
+        .el-dialog {
+            width: 440px;
+            height: 240px;
+            position: absolute;
+            top: 50% !important;
+            left: 50%!important;
+            margin-top: -120px !important;
+            margin-left: -220px !important;
+            transform: translateY(0)!important;
+            .el-dialog__header {
+                padding: 0;
+                height: 46px;
+                line-height: 46px;
+                text-align: center;
+                background: #F5F5F5;
+
+                .el-dialog__headerbtn {
+                    top: 10px;
+                    font-size: 20px !important;
+                    right: 10px;
+                }
+            }
+
+            .el-dialog__body {
+                height: 194px;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                .pay_b {
+                    width: 380px;
+
+                    .pay_wx {
+                        width: 272px;
+
+                        p {
+                            display: inline;
+                            color: #f3262d;
+                        }
+                    }
+
+                }
+
+                .img_pay {
+                    width: 272px;
+
+                    margin: -43px 0;
+
+                    p {
+                        display: inline;
+                    }
+                }
+
+                &>.el-button {
+                    color: #fff;
+                    background: #f3262d;
+                    padding: 10px 25px;
+                    border-color: #f3262d;
+                }
+                &>.el-button:hover{
+                    background: #f43c42;
+                }
+            }
+        }
+    }
+
+    .banList {
+        &>.el-dialog {
+            width: 750px;
+            height: 530px;
+            position: absolute;
+            top: 50%!important;
+            left: 50%!important;
+            margin-top: -265px!important;
+            margin-left: -375px!important;
+            transform: translateY(0)!important;
+            &>.el-dialog__header {
+                padding: 0;
+                height: 46px;
+                line-height: 46px;
+                text-align: left;
+                background: #F5F5F5;
+                padding-left: 22px;
+
+                &>.el-dialog__headerbtn {
+                    top: 10px;
+                    right: 20px;
+                    font-size: 20px !important;
+                }
+
+                &>.el-dialog__title {
+                    font-size: 16px;
+                    color: #333;
+                    text-align: left;
+                }
+            }
+
+            .el-dialog__body {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 0 20px;
+
+                &>div {
+                    width: 710px;
+                    height: 406px;
+                    margin-top: 20px;
+                    padding: 26px 30px 0;
+
+                    &>.ban_b {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 0 0 30px;
+                        float: left;
+                        margin-bottom: 10px;
+                        width: 320px;
+                        height: 170px;
+                        border: 1px solid #f5a34c;
+                        border-radius: 5px;
+                        &>div:nth-child(1) {
+                            width: 207px;
+                            height: 34px;
+                            margin-top: 24px;
+                            margin-bottom: 16px;
+
+                            img {
+                                width: 207px;
+                                height: 34px;
+                                display: block;
+                            }
+                        }
+
+                        &>div:nth-child(2) {
+                            &>span {
+                                font-size: 14px;
+                                color: #333;
+                                display: flex;
+                                margin-bottom: 2px;
+                            }
+
+                        }
+                    }
+
+                    &>.ban_b:nth-child(2n) {
+                        margin-left: 10px;
+                    }
+
+                    &>.ban_b:nth-child(2) {
+
+                        &>div:nth-child(1) {
+                            width: 164px;
+                            height: 40px;
+                            margin-top: 20px;
+                            margin-bottom: 14px;
+
+                            &>img {
+                                width: 164px;
+                                height: 40px;
+                            }
+                        }
+                    }
+
+                    &>.ban_b:nth-child(3) {
+
+                        &>div:nth-child(1) {
+                            width: 192px;
+                            height: 38px;
+                            margin-top: 21px;
+                            margin-bottom: 14px;
+
+                            &>img {
+                                width: 192px;
+                                height: 38px;
+                            }
+                        }
+                    }
+                }
+
+                &>span {
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    color: #fff;
+                    background: #f3262d;
+                    text-align: center;
+                    line-height: 30px;
+                    float: right;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    border-radius: 2px;
+                }
+
+                &>span:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+
+    }
+}
+
+.el-dialog__headerbtn:hover {
+    .el-dialog__close {
+        color: #f3262d !important;
+    }
+}

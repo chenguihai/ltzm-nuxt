@@ -1,0 +1,272 @@
+.myBankbox {
+  .user_cen_right{
+    overflow: hidden !important;
+  }
+  .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: #666666;
+  }
+  .myBank,
+  .myBankE {
+    .myBank_add {
+
+      .demo-ruleFormE,
+      .demo-ruleForm {
+        &>.el-form-item {
+          width: 100%;
+          margin-bottom: 26px;
+
+          &>.el-form-item__label {
+            width: 138px !important;
+            color: #999;
+          }
+
+          &>.el-form-item__content {
+            float: left;
+            // overflow: auto;
+            width: 628px;
+            text-align: left;
+            margin-left: 0 !important;
+            display: flex;
+            position: relative;
+           
+            &>.el-select {
+              // width: 100%;
+
+              &>.el-input--suffix {
+                &>.el-input__suffix {
+                  display: none;
+                }
+                &>.el-input__inner:focus {
+                  border: 1px solid #5da6ff !important;
+                  outline: 0 !important;
+                  box-shadow: 0px 0px 4px #5da6ff !important;
+                }
+
+                &>.el-form-item.is-error .el-input__inner {
+                  // border: 1px solid #DCDFE6;
+                  box-shadow: none;
+                }
+              }
+            }
+
+            .el-input {
+              &>.el-input__inner{
+                color: #333;
+              }
+              .el-input__inner:focus {
+                border: 1px solid #5da6ff !important;
+                outline: 0 !important;
+                box-shadow: 0px 0px 4px #5da6ff !important;
+              }
+
+
+              .el-form-item.is-error .el-input__inner {
+                // border: 1px solid #DCDFE6;
+                box-shadow: none;
+              }
+            }
+
+            .el-input {
+              display: block;
+              width: 295px;
+
+              .el-input__inner {
+                height: 38px;
+                border-radius: 0;
+              }
+
+            }
+
+            .take_bankM {
+              font-size: 12px;
+              color: #f3262d;
+              position: absolute;
+              top: 29px;
+            }
+
+            .el-radio:focus:not(.is-focus):not(:active):not(.is-disabled) .el-radio__inner {
+              box-shadow: none;
+            }
+
+            .el-form-item__error {
+              top: 12%;
+              left: 305px;
+              // width: 133px;
+              background: url('../../../assets/img/error.png') no-repeat;
+              padding-left: 21px;
+              line-height: 18px;
+              height: 18px;
+              padding-top: 0px;
+            }
+
+            .el-radio-group {
+              margin-top: -13px;
+              height: 18px;
+
+              .el-radio {
+                float: left;
+                height: 18px;
+                display: flex;
+                align-items: center;
+              }
+
+              // margin-left: 30px;
+              .el-radio__inner {
+                border-radius: 5px;
+              }
+            }
+
+            .el-radio-group {
+              span {
+                float: left;
+                color: #666;
+                font-size: 12px;
+                p {
+                  float: right;
+                }
+              }
+
+              .el-radio__label {
+                color: #666;
+
+                p {
+                  color: #0066cc;
+                }
+              }
+            }
+          }
+        }
+        &>.el-form-item:nth-child(2){
+          margin-bottom: 40px!important;
+        }
+        &>.el-form-item:nth-child(4){
+          margin-bottom: 0px!important;
+        }
+        &>.el-form-item:nth-child(5) {
+          margin-left: 139px;
+          height: 22px;
+          margin-bottom: 42px;
+          .el-form-item__content{
+            height: 22px;
+            display: block;
+          }
+        }
+
+        &>.el-form-item:last-child {
+          margin-left: 140px;
+
+          .el-button {
+            width: 110px;
+            height: 36px;
+            border: none;
+            background: #f3262d;
+          }
+          .el-button:hover{
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .el-form {
+
+        .el-form-item:nth-child(4),
+        .el-form-item:nth-child(3) {
+          .el-form-item__content {
+            .el-form-item__error {
+              top: 28%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .myBank {
+    &>.myBank_add {
+      &>.el-form {
+        &>.el-form-item {
+          margin-bottom: 26px;
+        }
+      }
+    }
+  }
+
+  .myBankE {
+    .myBank_add {
+      .demo-ruleForm {
+        .el-form-item {
+          .el-form-item__label {
+            width: 149px !important;
+          }
+        }
+
+        &>.el-form-item:nth-child(5) {
+          margin-left: 148px;
+        }
+
+        &>.el-form-item:last-child {
+          margin-left: 150px;
+
+          .el-button {
+            width: 110px;
+            height: 36px;
+            border: none;
+            background: #f3262d;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.region {
+  min-width: 295px !important;
+
+}
+
+.el-form-item.is-success .el-input__inner {
+  // border: 1px solid #DCDFE6 !important;
+  // box-shadow: none !important;
+}
+
+.errorSpan {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  width: 208px;
+  color: #f3262d !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+
+  &>img {
+    margin-right: 5px;
+  }
+}
+.el-checkbox{
+  width: 100%;
+  .el-checkbox__label{
+    width: 100%;
+    .errorSpan2{
+      position: absolute;
+      left: 200px;
+      top: 11px;
+    }
+    
+    span>a{
+      color: #067be7;
+      cursor: pointer;
+       text-decoration: none;
+    }
+  }
+}
+
+.errorSpan2 {
+  margin-left: 53px;
+}
+.icon_myBank {
+  position: absolute;
+  z-index: 1;
+  left: 279px;
+  width: 8px!important;
+  height: 40px!important;
+}

@@ -1,0 +1,28 @@
+
+{
+   
+    "dev": {
+        "API_ROOT_URL": "https://api.lingtianzhongmei.com/api",
+        "API_ROOT_URL_INTERNAL": "https://api.lingtianzhongmei.com/api",
+        "UPLOAD_IMAGE_URL": "https://api.lingtianzhongmei.com",
+        "PORTAL_URL": "http://www.ltzm.com",
+        "IMG_HOST": "https://ltzm1.oss-cn-shenzhen.aliyuncs.com/",
+        "MOBILE_DOMAIN": "https://m.lingtianzhongmei.com"
+    },
+    "test": {
+        "API_ROOT_URL": "https://api.lingtianzhongmei.com/api",
+        "API_ROOT_URL_INTERNAL": "https://api.lingtianzhongmei.com/api",
+        "UPLOAD_IMAGE_URL": "https://api.lingtianzhongmei.com",
+        "PORTAL_URL": "http://www.ltzm.com",
+        "IMG_HOST": "https://ltzm1.oss-cn-shenzhen.aliyuncs.com/",
+        "MOBILE_DOMAIN": "https://m.lingtianzhongmei.com"
+    },
+    "prod": {
+        "API_ROOT_URL": "https://api.zhongmei66.com/api",
+        "API_ROOT_URL_INTERNAL": "http://localhost:9081/api",
+        "UPLOAD_IMAGE_URL": "https://api.zhongmei66.com",
+        "PORTAL_URL": "https://www.zhongmei66.com",
+        "IMG_HOST": "https://img.ltzm66.com/",
+        "MOBILE_DOMAIN": "https://m.zhongmei66.com"
+    }
+}
